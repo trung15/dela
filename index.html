@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+</head>
+<style>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:#f8f8f8;
+  font-family: Arial;
+  color:white;
+}
+.logo img {
+  width: 170px;
+  height: 98px;
+  padding-left:70px;
+
+}
+
+.logo {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px;
+}
+
+nav a {
+  padding-left: 70px;
+  display: block;
+  padding: 10px;
+  font-size: 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul li {
+  width: 200px;
+  white-space: nowrap;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 200px;
+}
+body{
+  background-color: black;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+  font-size: xx-large;
+  font-family: Arial;
+  text-align: center;
+}
+h3{
+  font-family: serif;
+  font-size: xx-large;
+  padding-bottom: 300px;
+}
+.phongchu a{
+  font-family: system-ui;
+  font-size: xx-large;
+  
+}
+.service-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.service-list li {
+  display: table-cell;
+  width: 33.33%;
+  text-align: center;
+  padding: 30px;
+  box-sizing: initial;
+  position: relative;
+  overflow: hidden;
+  padding-top: 250px;
+}
+
+/* Hiệu ứng chuyển động */
+.service-list li:before {
+  content: '';
+  position: absolute;
+  top: 860px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.493);
+  transition: transform 0.3s ease-out;
+  z-index: 1;
+}
+
+
+.service-list li:hover:before {
+  transform: translateX(100%);
+}
+
+.service-list li a {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.service-list li img {
+  width: 100%;
+  height: auto;
+}
+
+.service-list li span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-bottom: 90px;
+}
+table {
+  width: 80%;
+}
+td, th {
+  font-size: x-large;
+  padding: 10px;
+  text-align: center;
+
+}
+footer {
+  background-color: rgba(99, 91, 91, 0.637);
+  padding: 0px 0;
+  color: white;
+}
+footer h3 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: -270px;
+}
+
+
+footer p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+footer a {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #6d6d6d;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-icons li {
+  list-style: none;
+}
+
+footer .social-icons img {
+  padding: 40px;
+  width: 100px;
+  height: 90px;
+}
+
+</style>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./hinhanh/logomenu.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./baitaplon.html">Home</a></li>
+        <li><a href="#">Personnel-Events</a>
+          <ul>
+            <li><a href="./casi.html">singer for hire</a></li>
+            <li><a href="./vucong.html">Dancers for hire</a></li>
+            <li><a href="./nguoimau.html">model rental</a></li>
+          </ul>
+        </li>
+        <li><a href="./banggia.html">choreographer</a></li>
+        <li><a href="./gioithieu.html">Vietnam young art</a></li>
+        <li><a href="./lienhe.html">login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Dịch vụ cho thuê vũ đoàn,nhóm múa,nhóm nhảy toàn quốc</h1>
+  <h3>Nếu như âm nhạc là một món ăn tinh thần không thể thiếu trong cuộc sống của con người cũng như trong các buổi tiệc thì các loại hình nghệ thuật nhảy múa cũng như vậy. Nó sẽ làm cho cuộc sống của chúng ta nhiều màu sắc hơn, sôi động hơn, cũng là yếu tố giúp sự kiện của bạn đặc sắc và hấp dẫn hơn. Ngày nay, việc đưa màn trình diễn của các Nhóm nhảy, Vũ đoàn, vũ công… vào biểu diễn tại các sự kiện đang được nhiều đơn vị lựa chọn. Những vũ đoàn chuyên nghiệp với vũ công nóng bỏng cùng vũ điệu đẹp mắt, âm nhạc sôi động… tạo hiệu ứng vui vẻ, sôi nổi, hào hứng là điểm cộng rất lớn mà chương trình nào cũng muốn có được.
+      Thể loại Nhóm Nhảy, Múa trong Sự Kiện do công ty Phát Hoàng Gia cung cấp:</h3>
+    <div class="table-container">
+    <table border="1" class="banggia">
+      <tr>
+        <td>STT</td>
+        <td>NỘI DUNG </td>
+        <td>CHI TIẾT</td>
+        <td>ĐƠN GIÁ</td>
+      </tr>
+      <tr>
+        <td colspan="4" align="center" >VŨ ĐOÀN</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Nhảy cổ động</td>
+        <td>Bao gồm: 10 dancers, chi phí trang phục, biên đạo, dàn dựng
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản</td>
+        <td>5,000,000 - 8,000,00</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Vũ đoàn black light</td>
+        <td>Bao gồm: 10 dancers, chi phí trang phục, biên đạo, dàn dựng
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản</td>
+        <td>5,000,000 - 8,000,000</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Vũ đoàn trống hội </td>
+        <td>Bao gồm: 6 dancers, chi phí trang phục, biên đạo, dàn dựng, đạo cụ
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản </td>
+        <td>3,900,000 - 6,000,000</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Vũ đoàn trống Hoàng Gia</td>
+        <td>Bao gồm: 6 dancers, chi phí trang phục, biên đạo, dàn dựng, đạo cụ
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản</td>
+        <td>4,200,000 - 6,600,000</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Vũ đoàn múa quạt</td>
+        <td>Bao gồm: 6 dancers, chi phí trang phục, biên đạo, dàn dựng, đạo cụ
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản </td>
+        <td>3,300,000 - 4,800,000</td>
+      </tr>  
+      <tr>
+        <td>6</td>
+        <td>Vũ đoàn múa sen</td>
+        <td>Bao gồm: 6 dancers, chi phí trang phục, biên đạo, dàn dựng, đạo cụ
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản </td>
+        <td>3,300,000 - 4,800,000</td>
+      </tr> 
+      <tr>
+        <td>7</td>
+        <td>Vũ đoàn Sexy Dance</td>
+        <td>Bao gồm: 6 dancers, chi phí trang phục, biên đạo, dàn dựng
+          Biểu diễn bài có sẵn, nội dung đơn giản</td>
+        <td>3,600,000 - 5,400,000</td>
+      </tr> 
+      <tr>
+        <td>8</td>
+        <td>Vũ đoàn Cat Dance</td>
+        <td>Bao gồm: 6 dancers, chi phí trang phục, biên đạo, dàn dựng, đạo cụ
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản</td>
+        <td>3,600,000 - 4,800,000</td>
+      </tr> 
+      <tr>
+        <td>9</td>
+        <td>Vũ đoàn Flamenco </td>
+        <td>Bao gồm: 6 dancers, chi phí trang phục, biên đạo, dàn dựng, đạo cụ
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản</td>
+        <td>3,600,000 - 4,800,000</td>
+      </tr> 
+      <tr>
+        <td>10</td>
+        <td>Vũ đoàn Samba</td>
+        <td>Bao gồm: 6 dancers, chi phí trang phục, biên đạo, dàn dựng, đạo cụ
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản </td>
+        <td>3,600,000 - 4,800,000</td>
+      </tr> 
+      <tr>
+        <td>11</td>
+        <td>Vũ đoàn Hawaii</td>
+        <td>Bao gồm: 6 dancers, chi phí trang phục, biên đạo, dàn dựng, đạo cụ
+          Biểu diễn bài có sẵn hoặc tập bài nội dung đơn giản</td>
+        <td>3,600,000 - 4,800,000</td>
+      </tr> 
+       <tr>
+        <td colspan="4">ĐỐI VỚI CÁC THỂ LOẠI MÚA TƯƠNG TÁC VÀ TIẾT MỤC CÓ ĐẶC TRƯNG
+          RIÊNG XIN LIÊN HỆ TRỰC TIẾP ĐỂ ĐƯỢC BÁO GIÁ</td>
+      </tr>
+    </table>
+</div>
+<div class="content">
+    <ul class="service-list">
+        <li>
+          <a href="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D4955917821126195%26set%3Da.270199089698115%26type%3D3&show_text=true&width=500" width="500" height="454" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            <img src="./hinhanh/anhnoibat1.jpg" alt="Dịch vụ 1">
+            <span>tại VPbank </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchuoi2194%2Fposts%2F4774421382664483&show_text=true&width=500" width="500" height="579" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            <img src="./hinhanh/anhnoibat2.jpg" alt="Dịch vụ 2">
+            <span>tại đêm gala sao việt</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D153508912544090%26set%3Da.113216703239978%26type%3D3&show_text=true&width=500" width="500" height="742" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            <img src="./hinhanh/anhnoibat3.jpg" alt="Dịch vụ 3">
+            <span>tại gottalent học viện tài chính</span>
+          </a>
+        </li>
+    </ul>
+    <center><h3>Sự kiện đã làm.</h3></center>
+  </div>
+  <div class="phongchu">
+    <center><h1>Về chúng tôi</h1></center>
+    <a>Mỗi khi nhắc tới vũ đoàn, chúng ta sẽ nghĩ đến một nhóm các nghệ sĩ tài năng, đầy sức sống và sự sáng tạo. Vũ đoàn không chỉ là nơi để các nghệ sĩ thể hiện tài năng của mình mà còn là một bộ phận không thể thiếu trong ngành giải trí.
+            Trong số những vũ đoàn được yêu thích nhất hiện nay, không thể không kể đến vũ đoàn "Sparkling Stars". Được thành lập từ năm 2010, "Sparkling Stars" đã nhanh chóng trở thành một trong những vũ đoàn nổi tiếng nhất trên toàn thế giới.
+            Với hơn 100 thành viên, "Sparkling Stars" là một trong những đội ngũ vũ công lớn nhất và đa dạng nhất trên thế giới. Điều này cho phép họ có thể biểu diễn các loại hình múa khác nhau, từ ballet đến hip hop, từ nhảy cổ điển đến nhảy hiện đại. Bất kể bạn yêu thích nhảy gì, bạn đều có thể tìm thấy điều mình muốn xem tại "Sparkling Stars".
+            Với những màn trình diễn đầy sáng tạo, "Sparkling Stars" đã nhanh chóng thu hút được sự quan tâm của khán giả trên toàn thế giới. Những bước nhảy đầy uyển chuyển, những cử chỉ tinh tế và những trang phục rực rỡ khiến cho khán giả không thể rời mắt khỏi sân khấu.
+
+        Tuy nhiên, thành công của "Sparkling Stars" không chỉ đến từ kỹ năng vũ đạo của các thành viên mà còn đến từ sự sáng tạo trong việc đưa ra các ý tưởng mới. "Sparkling Stars" luôn có những màn biểu diễn độc đáo và khác lạ, đem đến cho người xem những trải nghiệm mãn nhãn và khó quên.
+    </a>
+      <center><img src="./hinhanh/anhtrangchu1.jpg"></center>
+      <a>
+        
+Một điểm đặc biệt khác của "Sparkling Stars" là họ không chỉ biểu diễn trên sân khấu của các rạp hát lớn mà còn xuất hiện trong các sự kiện âm nhạc, show truyền hình và các triển lãm nghệ thuật. Họ luôn sẵn sàng mang lại niềm vui cho mọi người, bất kể ở đâu và trong hoàn cảnh nào.
+
+Với sự tài năng, sáng tạo và sự cống hiến của các thành viên, "Sparkling Stars" đã và đang tiếp tục là một trong những vũ đoàn được yêu thích nhất trên toàn thế giới. Họ là một minh chứng cho việc rằng, bất kỳ ai có đam mê và nỗ lực đều có thể đạt được thành công vượt bậc trong cuộc sống.
+Ngoài sự tài năng và cống hiến của các thành viên, "Sparkling Stars" còn được khán giả yêu thích bởi tính chuyên nghiệp cao. Đội ngũ sản xuất của vũ đoàn luôn chuẩn bị kỹ lưỡng cho mỗi màn trình diễn, từ ánh sáng cho đến âm thanh, trang phục và các phụ kiện. Nhờ đó, "Sparkling Stars" luôn mang đến những màn biểu diễn hoành tráng và ấn tượng.
+Bên cạnh đó, "Sparkling Stars" cũng gây ấn tượng với khán giả bằng các hoạt động từ thiện. Vũ đoàn thường xuyên tham gia vào các hoạt động gây quỹ và các chiến dịch từ thiện, như việc hỗ trợ trẻ em nghèo, người già neo đơn và các trường học tại các vùng nông thôn. Điều này cho thấy "Sparkling Stars" không chỉ là một đội ngũ vũ công tài năng mà còn là một đội ngũ có trách nhiệm và tâm huyết với cộng đồng.
+      </a>
+      <center><img src="./hinhanh/anhtrangchu3.jpg"></center>
+      <a>Không chỉ có những thành viên trẻ tuổi và năng động, "Sparkling Stars" còn có các thành viên giàu kinh nghiệm và tài năng. Bởi vì đội ngũ này được tập hợp từ khắp nơi trên thế giới, điều này đã tạo ra một không khí đa dạng và phong phú, mang lại nhiều trải nghiệm và ý tưởng mới cho "Sparkling Stars".
+
+        Một điểm đặc biệt khác của "Sparkling Stars" là họ luôn coi trọng việc tiếp xúc với khán giả. Trong mỗi buổi biểu diễn, các thành viên của vũ đoàn luôn tận tình giao lưu và chụp ảnh cùng khán giả. Điều này đã tạo nên một sự kết nối chặt chẽ giữa "Sparkling Stars" và khán giả, giúp cho vũ đoàn ngày càng được yêu thích và ủng hộ.
+        
+        Cuối cùng, "Sparkling Stars" không chỉ là một vũ đoàn với các màn biểu diễn đẹp mắt mà còn là một tinh thần, một niềm đam mê và sự cống hiến của các nghệ sĩ. Tất cả những gì "Sparkling Stars" làm đều được thực hiện với sự tận tâm và tâm huyết cao độ, giúp cho vũ đoàn này trở thành một biểu tượng trong lĩnh vực nghệ thuật vũ đạo.
+        </a>
+        <center><img src="./hinhanh/anhtrangchu4.jpg"></center>
+        <a>
+          Tại "Sparkling Stars", niềm đam mê và nỗ lực không chỉ là để đạt được thành công, mà còn để mang lại niềm vui và sự thăng hoa cho khán giả. Trong tương lai, chúng ta có thể mong đợi nhiều hơn từ đội ngũ vũ đoàn ấn tượng này.</a>
+  </div>
+  <center><h1>Hình ảnh</h1></center>
+  <center><table cellspacing="1">
+    <tr><img src="./hinhanh/hinhanh1.jpg"></tr>
+    <tr><img src=""></tr>
+  </table></center>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="dichvufooter">
+          <table>
+            <tr>
+            <td><h3>Múa rối nước</h3></td>
+            <td><h3>Vũ đoàn black light</h3></td>
+            <td><h3>Vũ đoàn trống hội</h3></td>
+            </tr>
+            <tr>
+            <td><h3>Vũ đoàn trống Hoàng Gia</h3></td>
+            <td><h3>Vũ đoàn múa quạt</h3></td>
+            <td><h3>Vũ đoàn múa sen</h3></td>
+            </tr>
+            <tr>
+              <td><h3>Vũ đoàn Sexy Dance</h3></td>
+              <td><h3>Vũ đoàn Cat Dance</h3></td>
+              <td><h3>Vũ đoàn Flamenco</h3></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <h3>Theo dõi chúng tôi trên</h3>
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/profile.php?id=100009132306419&mibextid=ZbWKwL"><img src="./hinhanh/iconfacebook.png"></a></li>
+            <li><a href="https://instagram.com/aki090911?igshid=NTc4MTIwNjQ2YQ=="><img src="./hinhanh/iconig.jpg"></a></li>
+            <li><a href=""><img src="./hinhanh/icontiktok.png"></a></li>
+            <li><a href=""><img src="./hinhanh/icongmail.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center">© 2023 Vũ Đoàn Múa. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
